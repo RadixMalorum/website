@@ -1,0 +1,28 @@
+// Device size Variables
+$ipad-pro-portrait-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 1366px) and (max-device-width : 1366px) and (min-device-height : 1024px) and (max-device-height : 1024px) and (min-width: 1366px) and (max-width: 1366px)";
+$ipad-portrait-breakpoint: "(min-device-width : 768px) and (max-device-width : 768px) and (min-device-height : 1024px) and (max-device-height : 1024px) and (min-width: 768px) and (max-width: 768px)";
+$ipad-landscape-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 768px) and (max-device-height : 768px) and (min-width: 1024px) and (max-width: 1024px)";
+
+// Responsive Mixins
+@mixin respond($media) {
+  @if $media == desktop {
+    @media only screen and (min-width: $medium-tablet-device-width + 1) and #{$desktop-only-breakpoint} { @content; }
+  }
+  @else if $media == ipad-pro-portrait {
+    @media only screen and #{$ipad-pro-portrait-breakpoint} { @content; }
+  }
+  @else if $media == ipad-pro-landscape {
+    @media only screen and #{$ipad-pro-landscape-breakpoint} { @content; }
+  }
+  @else if $media == ipad-pro-general {
+    @media only screen and #{$ipad-pro-landscape-breakpoint}, #{$ipad-pro-portrait-breakpoint} { @content; }
+  }
+  @else if $media == ipad-portrait {
+    @media only screen and #{$ipad-portrait-breakpoint} { @content; }
+  }
+  @else if $media == ipad-landscape {
+    @media only screen and #{$ipad-landscape-breakpoint} { @content; }
+  }
+  // etc
+}
