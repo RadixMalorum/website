@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald|Raleway");
 * {
   box-sizing: border-box; }
 
@@ -11,10 +12,10 @@ html {
   padding: 0; }
 
 body {
-  background-color: #fff;
-  color: #222;
+  background-color: white;
+  color: #2b2b2b;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   text-align: center; }
@@ -27,7 +28,7 @@ body {
     width: 50%;
     height: 100vh;
     z-index: 1;
-    opacity: 0.1;
+    opacity: 0.05;
     background-image: url("../assets/radixlogo_copertina.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -37,5 +38,127 @@ body {
     -webkit-background-size: cover;
     background-size: cover; }
 
-h1 {
+h1, h2 {
   font-family: 'Oswald', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white;
+  color: #2b2b2b;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url("../assets/radixlogo_copertina.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif; }
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 0px; }
+
+.bm-burger-bars {
+  background: #2b2b2b; }
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px; }
+
+.bm-cross {
+  background: white; }
+
+.bm-menu {
+  background: #2b2b2b;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.3em; }
+
+.bm-item-list {
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+  color: white;
+  padding: 1.3em; }
+  .bm-item-list a {
+    color: white;
+    padding: 0.8em; }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.page-title {
+  background-image: url("../assets/foot.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .page-title span {
+    font-size: 30px;
+    background-color: white;
+    padding: 0 8px 0 8px; }
+
+.tale {
+  width: 100%;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: justify;
+  margin-bottom: 30px; }
+  .tale:after {
+    content: ' ';
+    display: block;
+    background-image: url("../assets/foot.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px; }
+
+.citation {
+  font-size: 14px;
+  color: #6e6e6e;
+  text-align: right; }
+
+.description {
+  text-align: justify;
+  font-size: 16px; }
+  .description em {
+    font-weight: bold;
+    color: #a60800; }
+  .description .desc-img {
+    display: flex;
+    justify-content: space-between; }
+  .description img {
+    height: 400px;
+    margin-right: 30px;
+    box-shadow: -2px 2px 15px #888; }

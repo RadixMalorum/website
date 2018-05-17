@@ -1,2 +1,63 @@
 @import '_shared.scss';
-@import "./homepage.scss"
+@import './Menu.scss';
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.page-title{
+  background-image: url('../assets/foot.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  span{
+    font-size:30px;
+    background-color: $bg-color;
+    padding:0 8px 0 8px;
+  }
+}
+
+.tale{
+  width: 100%;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: justify;
+  margin-bottom:30px;
+  &:after{
+    content: ' ';
+    display: block;
+    background-image: url('../assets/foot.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height:60px;
+  }
+}
+
+.citation{
+  font-size: 14px;
+  color: $citation-color;
+  text-align: right;
+}
+
+.description{
+  text-align: justify;
+  font-size:16px;
+
+    em{
+      font-weight: bold;
+      color: $red;
+    }
+    .desc-img{
+      display:flex;
+      justify-content: space-between;
+    }
+    img{
+      height:400px;
+      margin-right: 30px;
+      box-shadow: -2px 2px 15px #888;
+    }
+}

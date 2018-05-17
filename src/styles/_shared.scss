@@ -2,14 +2,14 @@
 @import "./mixin.scss";
 
 //COLORS
-$bg-color: #fff;
-$font-color: #222;
-$grey: #2b2b2b;
-$yellow: #ffb630;
-$white: #fff;
-$blue: #0c4665;
-$green: #3a820e;
-$red: #a40606;
+$bg-color: rgb(255, 255, 255);
+$font-color: rgb(43, 43, 43);
+$citation-color: rgb(110, 110, 110);
+$grey: rgb(43, 43, 43);
+$yellow: rgb(255, 182, 48);
+$blue: rgb(12, 70, 101);
+$green: rgb(58, 130, 14);
+$red: rgb(166, 8, 0);
 
 * {
   box-sizing: border-box;
@@ -29,7 +29,7 @@ body {
   background-color: $bg-color;
   color: $font-color;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -42,7 +42,7 @@ body {
     width:50%;
     height:100vh;
     z-index: 1;
-    opacity: 0.1;
+    opacity: 0.05;
     background-image: url('../assets/radixlogo_copertina.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -55,6 +55,6 @@ body {
 }
 
 
-h1{
+h1, h2{
   font-family: 'Oswald', sans-serif;
 }
